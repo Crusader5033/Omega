@@ -25,7 +25,7 @@ You can delete the current file by clicking the **Remove** button in the file ex
 
 You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
 
-## Konfigurace pro pokročilé 
+## Konfigurace pro pokročilé {#konfigurace}
 Vše pro konfiguraci naleznete zde případně se obraťte na pdf přiložené k aplikaci.Toto je doporučeno pro správce IT případně uživatele kteří mají zkušenost s MSSQL a vědí co dělají.
 ###  Nastavení DB
 Nejdříve je potřeba vytvořit DB do které se bude aplikace připojovat, zde je diagram:
@@ -35,6 +35,7 @@ Ujistěte se že username u uživatele by měl být unique.
 Nyní je potřeba upravit konfigutační soubor.
 Konfigurační soubor app.config obsahuje informace potřebné pro připojení k MSSQL databázi. Struktura souboru je následující:
 
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
 	<appSettings>
@@ -44,7 +45,8 @@ Konfigurační soubor app.config obsahuje informace potřebné pro připojení k
 		<add key="Password" value="dominik2005"/>
 	</appSettings>
 </configuration>
-### 2.2 Nastavení Připojení do Databáze
+```
+### Nastavení Připojení do Databáze
 Výše uvedené hodnoty (`DataSource`, `Database`, `Name`, `Password`) je třeba přizpůsobit aktuálním připojovacím údajům pro MSSQL server.
 
 
@@ -67,7 +69,7 @@ Výše uvedené hodnoty (`DataSource`, `Database`, `Name`, `Password`) je třeba
 - `Sluzby`: Obsahuje informace o vojenských službách vojáků.
 - `Users`: Obsahuje informace o uživatelích.
 - `Logs`: Obsahuje informace o záznamech o přihlášení a registraci.
-- 
+  
 ###  Pohledy
 - `Vojaci_S_Specializacemi`: Pohled spojující informace o vojácích a jejich specializacích.
 - `Vojaci_S_Sluzbami`: Pohled spojující informace o vojácích a jejich službách.

@@ -7,25 +7,45 @@ Operační systém Windows 10 a novější. Nezbytné je mít nainstalovaný .NE
 
 ## Konfigurace
 
-Pro běžného uživatele doporučujeme neupravovat ani se nijak jinak věnovat konfiguraci. S případnými dotazy ohledně konfigurace se obraťte na Vašeho správce IT. V případě že jste pokročilí uživatel naleznete konfiguraci  [konfiguraci pro pokročilé zde](#konfigurace)
+Pro běžného uživatele doporučujeme neupravovat ani se nijak jinak věnovat konfiguraci. S případnými dotazy ohledně konfigurace se obraťte na Vašeho správce IT. V případě že jste pokročilí uživatel vše naleznete v konfiguraci pro pokročilé 
 
-## Switch to another file
+## Spouštění Aplikace
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+Pro spuštění aplikace stačí spustit spustitelný soubor (exe) Omega.exe ve Omega\bin\Debug, aplikace se spustí sama
 
-## Rename a file
+## Vytváření, Čtení, Aktualizace a Mazání (CRUD) Operace
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+Pro většinu entit (voják, specializace, zkouška, útvar, role, služba) jsou implementovány funkce pro CRUD operace, umožňující manipulaci s daty v databázi.
 
-## Delete a file
+## HOW TO
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+### Přihlášení
+Po spuštění.Budete vyzváni k zadání uživatelského jména a hesla. Pokud máte oboje, vyplňte pole a stisknete tlačítko pro přihlášení.
 
-## Export a file
+### Registrace
+Pokud nemáte uživatelské jméno a heslo, zaregistrujte se. V oknu přihlášení stiskněte tlačítko pro registraci. Otevře se nové okno, vyplňte všechna pole a stiskněte tlačítko pro registraci.Pokud je vše správně dostanete potvrzení a můžete okno pro registraci zavřít a přihlásit se.
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+### Čtení
+Zobrazení dat o vojácích, specializacích, zkouškách, útvarech, rolích a službách se provádí v okně výpis. Stačí stisknout tlačítko výpis a následně si vybrat jakou tabulku chcete zobrazit
 
-## Konfigurace pro pokročilé {#konfigurace}
+### Vytvoření
+Přidání nových záznamů do databáze je možné pomocí příslušných formulářů v okně pro přidání.Stiskněte tlačítko vložit. Vyberte pomocí záložek na vrchní straně jaký záznam chcete přidat.
+
+### Mazání
+Smazání záznamů lze provést pomocí okna pro smazání, kde je nutné vybrat, který záznam se má odstranit.Stiskněte tlačítko smazat.Pomocí záložek procházejte záznamy v různých tabulkách. Pro vybrání konkrétního záznamu pro smazání stiskněte první políčko(sloupec před id). Následně stiskněte na odpovídající tlačítko.
+
+### Aktualizace
+Upravování dat v databázi probíhá v okně úprava.Stiskněte tlačítko upravit.Pomocí záložek procházejte záznamy v různých tabulkách.Pro vybrání konkrétního záznamu pro úpravu stiskněte první políčko(sloupec před id).Vyplňte údaj který chcete změnit a stiskněte tlačítko pro úpravu. Není nutné vyplňovat všechny údaje.
+
+### Export
+Export dat z tabulek. Vyberte si v hlavním okně export buď v CSV či XML. Objeví se nové okno, vyberte tabulku ze které chcete exportovat data a stiskněte příslušné tlačítko. Vyberte cestu pro váš export a potvrďte.
+
+
+### Přístup k AdminMenu
+Odhlašte se pomocí Odhlásit tlačítka případně při dalším spuštění. Jako uživatelské jméno zadejte: admin ,heslo také: admin. Otevře se nové okno pro práci s uživateli a procházení záznamů přihlášení a registrace.
+
+
+## Konfigurace pro pokročilé 
 Vše pro konfiguraci naleznete zde případně se obraťte na pdf přiložené k aplikaci.Toto je doporučeno pro správce IT případně uživatele kteří mají zkušenost s MSSQL a vědí co dělají.
 ###  Nastavení DB
 Nejdříve je potřeba vytvořit DB do které se bude aplikace připojovat, zde je diagram:

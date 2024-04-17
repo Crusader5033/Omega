@@ -51,7 +51,7 @@ Vše pro konfiguraci naleznete zde případně se obraťte na pdf přiložené k
 Nejdříve je potřeba vytvořit DB do které se bude aplikace připojovat, zde je diagram:
 ![DiagramSQL](https://github.com/Crusader5033/Omega/assets/113086006/f38c3b94-3149-4c5e-8e91-95b486be3c12)
 Ujistěte se že username u uživatele by měl být unique.
-### 2.1 Struktura `app.config`
+### Struktura `app.config`
 Nyní je potřeba upravit konfigutační soubor.
 Konfigurační soubor app.config obsahuje informace potřebné pro připojení k MSSQL databázi. Struktura souboru je následující:
 

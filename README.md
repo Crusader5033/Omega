@@ -59,10 +59,10 @@ Konfigurační soubor app.config obsahuje informace potřebné pro připojení k
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
 	<appSettings>
-		<add key="DataSource" value="193.85.203.188"/>
-		<add key="Database" value="prochazka6"/>
-		<add key="Name" value="prochazka6"/>
-		<add key="Password" value="dominik2005"/>
+		<add key="DataSource" value="xxx.xxx.xxx.xxx"/>
+		<add key="Database" value="xxxxx"/>
+		<add key="Name" value="xxxxxx"/>
+		<add key="Password" value="xxxx"/>
 	</appSettings>
 </configuration>
 ```
